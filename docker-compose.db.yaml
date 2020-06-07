@@ -13,7 +13,7 @@ services:
       - "dbdata:/var/lib/postgresql/data"
     networks:
       - db_nw
-  oneops:
+  app:
     container_name: ${CONTAINER}
     image: ${REGISTRY}/${IMAGE}:${VERSION}
     restart: always
