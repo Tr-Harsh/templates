@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  db:
+    container_name: ${DBCONTAINER}
+    image: ${IMAGE}
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - ${DB_PORT_MAP}
+    volumes:
+      - "dbdata:/var/lib/postgresql/data"
+    networks:
+      - db_nw
+  oneops:
+    container_name: ${CONTAINER}
+    image: ${REGISTRY}/${IMAGE}:${VERSION}
+    restart: always
+    ports:
+      - ${APP_PORT_MAP} # for testing purposes, (un)comment as required
+    tty: true
+    networks:
+      - db_nw
+      - web_nw
+    depends_on:
+      - db
+networks:
+  db_nw:
+    driver: bridge
+  web_nw:
+    driver: bridge
+volumes:
+  dbdata:
