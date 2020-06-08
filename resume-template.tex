@@ -1,0 +1,304 @@
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.5cm, top=0.5cm, right=1.5cm, bottom=0.1cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{079FAB}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Harsh}{Tripathi}
+
+\mobile{(+91) 7550170397}
+\email{tr.harsh@gmail.com}
+%\homepage{www.posquit0.com}
+\github{Tr-Harsh}
+\linkedin{tr-harsh10}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer Intern} % Job title
+    {GE Healthcare} % Organization
+    {India, Bengaluru} % Location
+    {Jan. 2020 - July. 2020} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed and Deployed a self service tool for CI/CD.}
+        \item {Optimised backend and database leading to notably faster response time. Introduced Database normalisation and migration}
+        \item {Optimised build by rewriting dockerfiles, significantly reducing the overall build time. Enhanced maintainability by downsizing deployment scripts to single docker-compose and re-structuring the overall project structure.}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {B.Tech in Computer Science and Engineering} % Degree
+    {Vellore Institute of Technology} % Institution
+    {India, Chennai} % Location
+    {July. 2016 - July 2020} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {CGPA: 8.67}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+
+  \cventry
+    {Intermediate and Marticulation} % Degree
+    {Air Force School} % Institution
+    {India, Gorakhpur} % Location
+    {May. 2005 - May. 2016} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Intermediate: 87.4\%  \hspace{1cm} Marticulation: 10 CGPA}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {Programming} % Category
+    {Python, C, C++, JAVA, } % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Web} % Category
+    {Flask, Express, Redux, React, Node.JS, Javascript(ECMA6), Hugo, HTML5} % Skills
+%---------------------------------------------------------
+    \cvskill
+    {Data Management} % Category
+    {PostgreSQL, MySQL, MongoDB, Neo4j, SQLAlchemy-ORM} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {DevOps and Automation} % Category
+    {Docker, Jenkins, Ansible, AWS(EC2,S3), Shell Scripting} % Skills
+
+%---------------------------------------------------------
+    \cvskill
+    {Miscellaneous} % Category
+    {Data Structures and Algorithms, Networking, Machine Learning, Linux} % Skills
+
+%---------------------------------------------------------
+\end{cvskills}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+    \cventry
+    {Tkinter-Python} % Degree
+    {Task Manager Simulator} % Institution
+    {Vellore Institute of Technology} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A GUI based Task manager that displays Process , CPU and Storage dynamically.}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+    \cventry
+    {Neo4j} % Degree
+    {Song Recommendation System} % Institution
+    {Vellore Institute of Technology} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Collaborative and Content song recommendation using Graph traversal. Used Neo4j a GUI graph database for storing data as a visual graph.}
+      \end{cvitems}
+    }
+    \newline;
+%---------------------------------------------------------
+    \cventry
+    {Flask,Flask-SQLAlchemy, HTML,CSS} % Degree
+    {Blog.it} % Institution
+    {Vellore Institute of Technology} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A complete blogging platform }
+      \end{cvitems}
+    }
+    \newline;
+%---------------------------------------------------------
+    \cventry
+    {Flask, scikit-learn, Raspberry-pi, Arduino} % Degree
+    {Crop Prediction System} % Institution
+    {Vellore Institute of Technology} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A Novel system for predicting crops based on soil features. Real time values were used for prediction using
+Temperature, pH, Humidity and Moisture sensors against a dataset using KNN algorithm}
+      \end{cvitems}
+    }
+    \newline;
+%---------------------------------------------------------
+    \cventry
+    {Word2Vec, Beautiful Soup} % Degree
+    {Semantic sentence similarity on Avengers Infinity-war script} % Institution
+    {Vellore Institute of Technology} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Similarity in Avengers based on dialogues was calculated using word embeddings and cosine similarity and was plotted as a heat map. Data was scrapped from transcript.fandom.com/wiki using beautiful soup.}
+      \end{cvitems}
+    }
+    \newline;
+%---------------------------------------------------------  
+    \cventry
+    {Keras} % Degree
+    {Neural Machine Translation System} % Institution
+    {Vellore Institute of Technology} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A LSTM based machine translator built from scratch for German to English translation}
+      \end{cvitems}
+    }
+    \newline;
+%---------------------------------------------------------  
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Certification and Achievements}
+
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Mozilla Open Domain Hackathon} % Event
+    {VIT} % Location
+    {2017} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Certified} % Award
+    {Network Associate} % Event
+    {I-Medita} % Location
+    {2018} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Founder and President} % Award
+    {VIT Network's Club} % Event
+    {VIT} % Location
+    {2018} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Represented Central Air Command in Football at Inter-Command summit.} % Event
+    {Air Force School} % Location
+    {2014} % Date(s)
+
+%---------------------------------------------------------
+  \cvhonor
+    {Winner} % Award
+    {Sportsman of the year} % Event
+    {Air Force School} % Location
+    {2014} % Date(s)
+
+%---------------------------------------------------------
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+\end{document}
